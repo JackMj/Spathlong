@@ -1,0 +1,47 @@
+page-menu {
+    .header {
+        top: 0px;
+        height: 220px;
+    }
+    .header-bg {
+        background: url('https://sihlemgobozi.files.wordpress.com/2014/04/img_6332.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .navbar {
+        background: transparent;
+    }
+    .toolbar-md-primary .toolbar-background-md {
+        background: transparent;
+    }
+    .darken {
+        background: #000000;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.2;
+    }
+    .card-md p {
+        color: #5f5f5f;
+    }
+    .card-title-md {
+        color: #434a54;
+        font-family: "Times New Roman", Times, serif;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .card-content-md {
+        background: #ffffff;
+    }
+    .scroll-content {
+        background: #f8f8f8;
+    }
+}
