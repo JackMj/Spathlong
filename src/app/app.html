@@ -1,10 +1,44 @@
 <ion-menu [content]="content">
     <ion-header>
         <ion-toolbar color="primary">
-            <ion-title>Menu</ion-title>
+            <ion-title>User</ion-title>
         </ion-toolbar>
     </ion-header>
+
+    <ion-content>
+
+        <div class="center-image"> 
+            <img class="img-circle img">
+        </div>
+        <div class="user-title">
+             <p> Muzi Jackie</p>
+        </div> 
+
+    <ion-list no-lines>
+
+      <button ion-item  menuClose >
+        <ion-icon name="ios-contact-outline" color="primary" item-left></ion-icon>
+        Profile
+      </button>
+
+      <button ion-item >
+        <ion-icon name="ios-bookmarks-outline" color="primary" item-left></ion-icon>
+        Order History
+      </button>
+
+      <button ion-item  menuClose>
+        <ion-icon name="ios-star-outline" color="primary" item-left></ion-icon>
+       Favourites
+      </button>
+
+      <button ion-item  menuClose>
+        <ion-icon color="primary" name="ios-information-circle-outline" item-left></ion-icon>
+        Logout
+      </button>
+
+    </ion-list>
+
+    </ion-content>
 </ion-menu>
 
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

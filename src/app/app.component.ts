@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform,Events} from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Page1 } from '../pages/page1/page1';
@@ -14,12 +14,12 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = Page1;
-
+  events: Events
   pages: Array<{title: string, component: any}>;
-
-  constructor(public platform: Platform) {
+  
+  constructor(public platform: Platform, events: Events) {
     this.initializeApp();
-
+    this.events = events;
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Page One', component: Page1 },
@@ -42,4 +42,6 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+  
+
 }
