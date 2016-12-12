@@ -16,13 +16,13 @@
 
     <ion-list no-lines>
 
-      <button ion-item  menuClose >
-        <ion-icon name="ios-contact-outline" color="primary" item-left></ion-icon>
+      <button ion-item (click)="orderHistory()"  menuClose >
+        <ion-icon name="ios-contact-outline"   color="primary" item-left></ion-icon>
         Profile
       </button>
 
       <button ion-item >
-        <ion-icon name="ios-bookmarks-outline" color="primary" item-left></ion-icon>
+        <ion-icon name="ios-bookmarks-outline"(click)="orderHistory()" color="primary" item-left></ion-icon>
         Order History
       </button>
 
